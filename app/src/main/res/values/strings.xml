@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlowBeats</string>
+    
+    <!-- Main Screen -->
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_night">Good Night</string>
+    <string name="ready_to_vibe">Ready to vibe?</string>
+    
+    <!-- Library -->
+    <string name="your_library">Your Library</string>
+    <string name="all_music">All your music in one place</string>
+    <string name="browse_all">Browse All</string>
+    <string name="your_playlists">Your Playlists</string>
+    <string name="see_all">See All</string>
+    
+    <!-- Search -->
+    <string name="search_hint">Search songs, artists, albums…</string>
+    <string name="recent_searches">Recent Searches</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_library">Library</string>
+    
+    <!-- Player -->
+    <string name="now_playing">Now Playing</string>
+    <string name="unknown_artist">Unknown</string>
+    
+    <!-- Tabs -->
+    <string name="tab_all">All</string>
+    <string name="tab_playlists">Playlists</string>
+    <string name="tab_artists">Artists</string>
+    
+    <!-- Actions -->
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="repeat">Repeat</string>
+    
+    <!-- User Profile -->
+    <string name="user_profile">User Profile</string>
+    <string name="logged_in_as">Logged in as User</string>
+    <string name="close">Close</string>
+    <string name="logout">Logout</string>
+    
+    <!-- Discover -->
+    <string name="discover_weekly">Discover Weekly</string>
+    <string name="fresh_picks">Fresh picks just for you</string>
+    <string name="play_now">Play Now</string>
+    
+    <!-- Errors -->
+    <string name="error_passwords_dont_match">Passwords do not match</string>
+    <string name="error_empty_fields">Please fill in all fields</string>
+    <string name="error_invalid_credentials">Invalid email or password</string>
+    
+    <!-- Login/Signup -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Full Name</string>
+    <!-- Note: login and signup might duplicate existing but safer to add if missing or use existing if present. XML allows overriding if in same file? No, duplicate error. 
+         Wait, I don't see "login" or "signup" in the file content I read. 
+         Ah, line 49 has "logout".
+         I will add them. -->
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="start_your_musical_journey">Start your musical journey</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="control_music_with_gestures">Control music with gestures</string>
+    <string name="back">Back</string>
+    
+    <!-- Headers -->
+    <string name="all_songs">All Songs</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/miniPlayerCard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mini_player_height"
+    android:layout_margin="@dimen/spacing_md"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="@dimen/elevation_lg"
+    app:cardBackgroundColor="@color/background_card"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/glass_border"
+    android:foreground="@drawable/ripple_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_md">
+
+        <!-- Album Art -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/ivAlbumArt"
+            android:layout_width="@dimen/album_art_sm"
+            android:layout_height="@dimen/album_art_sm"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/elevation_sm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/albumArtImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_album_art_placeholder" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Song Info -->
+        <LinearLayout
+            android:id="@+id/songInfoLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginEnd="@dimen/spacing_md"
+            app:layout_constraintStart_toEndOf="@id/ivAlbumArt"
+            app:layout_constraintEnd_toStartOf="@id/btnPlayPause"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tvSongTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aasman_Ko_Chukar_Dekh.."
+                android:textAppearance="@style/TextAppearance.FlowBeats.Body"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvArtistName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unknown_artist"
+                android:textAppearance="@style/TextAppearance.FlowBeats.Subtitle"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <!-- Play/Pause Button -->
+        <ImageButton
+            android:id="@+id/btnPlayPause"
+            android:layout_width="@dimen/icon_size_xl"
+            android:layout_height="@dimen/icon_size_xl"
+            android:src="@drawable/ic_pause"
+            android:background="@drawable/bg_button_rounded"
+            android:tint="@color/text_primary"
+            android:padding="@dimen/spacing_sm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:progressTint="@color/purple_accent"
+            android:progressBackgroundTint="@color/divider"
+            android:progress="40"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,795 @@
+Folder PATH listing for volume Windows
+Volume serial number is 48C2-B5B8
+C:.
++---.gradle
+|   +---8.0
+|   |   +---checksums
+|   |   +---fileChanges
+|   |   +---fileHashes
+|   |   \---vcsMetadata
+|   +---8.13
+|   |   +---checksums
+|   |   +---executionHistory
+|   |   +---expanded
+|   |   +---fileChanges
+|   |   +---fileHashes
+|   |   \---vcsMetadata
+|   +---8.5
+|   |   +---checksums
+|   |   +---dependencies-accessors
+|   |   |   \---19666b7ee7477488faba75fa6199859f9eeb0a35
+|   |   |       +---classes
+|   |   |       |   \---org
+|   |   |       |       \---gradle
+|   |   |       |           \---accessors
+|   |   |       |               \---dm
+|   |   |       \---sources
+|   |   |           \---org
+|   |   |               \---gradle
+|   |   |                   \---accessors
+|   |   |                       \---dm
+|   |   +---executionHistory
+|   |   +---fileChanges
+|   |   +---fileHashes
+|   |   \---vcsMetadata
+|   +---9.1.0
+|   |   +---checksums
+|   |   +---executionHistory
+|   |   +---expanded
+|   |   +---fileChanges
+|   |   +---fileHashes
+|   |   \---vcsMetadata
+|   +---buildOutputCleanup
+|   \---vcs-1
++---.idea
+|   \---caches
++---.vscode
++---app
+|   +---build
+|   |   +---generated
+|   |   |   +---ap_generated_sources
+|   |   |   |   +---debug
+|   |   |   |   |   \---out
+|   |   |   |   |       \---com
+|   |   |   |   |           \---flowbeats
+|   |   |   |   |               \---app
+|   |   |   |   |                   \---database
+|   |   |   |   +---debugAndroidTest
+|   |   |   |   |   \---out
+|   |   |   |   \---debugUnitTest
+|   |   |   |       \---out
+|   |   |   +---data_binding_base_class_source_out
+|   |   |   |   +---debug
+|   |   |   |   |   \---out
+|   |   |   |   |       \---com
+|   |   |   |   |           \---flowbeats
+|   |   |   |   |               \---app
+|   |   |   |   |                   \---databinding
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---out
+|   |   |   +---res
+|   |   |   |   \---pngs
+|   |   |   |       \---debug
+|   |   |   \---updated_navigation_xml
+|   |   |       +---debug
+|   |   |       \---debugAndroidTest
+|   |   +---intermediates
+|   |   |   +---aar_metadata_check
+|   |   |   |   +---debug
+|   |   |   |   |   \---checkDebugAarMetadata
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---checkDebugAndroidTestAarMetadata
+|   |   |   +---android_res_source_set_path_map
+|   |   |   |   +---debug
+|   |   |   |   |   \---mapDebugSourceSetPaths
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mapDebugAndroidTestSourceSetPaths
+|   |   |   +---annotation_processor_list
+|   |   |   |   +---debug
+|   |   |   |   |   \---javaPreCompileDebug
+|   |   |   |   +---debugAndroidTest
+|   |   |   |   |   \---javaPreCompileDebugAndroidTest
+|   |   |   |   \---debugUnitTest
+|   |   |   |       \---javaPreCompileDebugUnitTest
+|   |   |   +---apk
+|   |   |   |   \---debug
+|   |   |   +---apk_ide_redirect_file
+|   |   |   |   +---debug
+|   |   |   |   |   \---createDebugApkListingFileRedirect
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---createDebugAndroidTestApkListingFileRedirect
+|   |   |   +---app_metadata
+|   |   |   |   \---debug
+|   |   |   |       \---writeDebugAppMetadata
+|   |   |   +---assets
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugAssets
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestAssets
+|   |   |   +---compatible_screen_manifest
+|   |   |   |   \---debug
+|   |   |   |       \---createDebugCompatibleScreenManifests
+|   |   |   +---compiled_navigation_res
+|   |   |   |   +---debug
+|   |   |   |   |   \---compileDebugNavigationResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---compileDebugAndroidTestNavigationResources
+|   |   |   +---compile_and_runtime_r_class_jar
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestResources
+|   |   |   +---compile_app_classes_jar
+|   |   |   |   \---debug
+|   |   |   |       \---bundleDebugClassesToCompileJar
+|   |   |   +---compile_r_class_jar
+|   |   |   |   +---debug
+|   |   |   |   |   \---generateDebugRFile
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---generateDebugAndroidTestRFile
+|   |   |   +---compile_symbol_list
+|   |   |   |   +---debug
+|   |   |   |   |   \---generateDebugRFile
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---generateDebugAndroidTestRFile
+|   |   |   +---compressed_assets
+|   |   |   |   +---debug
+|   |   |   |   |   \---compressDebugAssets
+|   |   |   |   |       \---out
+|   |   |   |   |           \---assets
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---compressDebugAndroidTestAssets
+|   |   |   |           \---out
+|   |   |   +---data_binding_base_class_log_artifact
+|   |   |   |   +---debug
+|   |   |   |   |   \---dataBindingGenBaseClassesDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dataBindingGenBaseClassesDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---data_binding_dependency_artifacts
+|   |   |   |   +---debug
+|   |   |   |   |   \---dataBindingMergeDependencyArtifactsDebug
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dataBindingMergeDependencyArtifactsDebugAndroidTest
+|   |   |   +---data_binding_layout_info_type_merge
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugResources
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestResources
+|   |   |   |           \---out
+|   |   |   +---data_binding_layout_info_type_package
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---packageDebugAndroidTestResources
+|   |   |   |           \---out
+|   |   |   +---desugar_graph
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   |           +---currentProject
+|   |   |   |   |           |   +---dirs_bucket_0
+|   |   |   |   |           |   +---dirs_bucket_1
+|   |   |   |   |           |   +---dirs_bucket_2
+|   |   |   |   |           |   +---dirs_bucket_3
+|   |   |   |   |           |   +---jar_3f4dbfcaafb143e3cb21dcbc98803d37f9308658f84acbbe846c26b828651180_bucket_0
+|   |   |   |   |           |   +---jar_3f4dbfcaafb143e3cb21dcbc98803d37f9308658f84acbbe846c26b828651180_bucket_1
+|   |   |   |   |           |   +---jar_3f4dbfcaafb143e3cb21dcbc98803d37f9308658f84acbbe846c26b828651180_bucket_2
+|   |   |   |   |           |   \---jar_3f4dbfcaafb143e3cb21dcbc98803d37f9308658f84acbbe846c26b828651180_bucket_3
+|   |   |   |   |           +---externalLibs
+|   |   |   |   |           +---mixedScopes
+|   |   |   |   |           \---otherProjects
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   |               +---currentProject
+|   |   |   |               |   +---dirs_bucket_0
+|   |   |   |               |   +---dirs_bucket_1
+|   |   |   |               |   +---dirs_bucket_2
+|   |   |   |               |   +---dirs_bucket_3
+|   |   |   |               |   +---jar_1fddde55c1701105d5f42d5cfa5d9304e62ed37b8b4576b7d41ddc81a968c342_bucket_0
+|   |   |   |               |   +---jar_1fddde55c1701105d5f42d5cfa5d9304e62ed37b8b4576b7d41ddc81a968c342_bucket_1
+|   |   |   |               |   +---jar_1fddde55c1701105d5f42d5cfa5d9304e62ed37b8b4576b7d41ddc81a968c342_bucket_2
+|   |   |   |               |   \---jar_1fddde55c1701105d5f42d5cfa5d9304e62ed37b8b4576b7d41ddc81a968c342_bucket_3
+|   |   |   |               +---externalLibs
+|   |   |   |               +---mixedScopes
+|   |   |   |               \---otherProjects
+|   |   |   +---dex
+|   |   |   |   +---debug
+|   |   |   |   |   +---mergeExtDexDebug
+|   |   |   |   |   +---mergeLibDexDebug
+|   |   |   |   |   |   +---0
+|   |   |   |   |   |   +---1
+|   |   |   |   |   |   +---10
+|   |   |   |   |   |   +---11
+|   |   |   |   |   |   +---12
+|   |   |   |   |   |   +---13
+|   |   |   |   |   |   +---14
+|   |   |   |   |   |   +---15
+|   |   |   |   |   |   +---2
+|   |   |   |   |   |   +---3
+|   |   |   |   |   |   +---4
+|   |   |   |   |   |   +---5
+|   |   |   |   |   |   +---6
+|   |   |   |   |   |   +---7
+|   |   |   |   |   |   +---8
+|   |   |   |   |   |   \---9
+|   |   |   |   |   \---mergeProjectDexDebug
+|   |   |   |   |       +---0
+|   |   |   |   |       +---1
+|   |   |   |   |       +---10
+|   |   |   |   |       +---11
+|   |   |   |   |       +---12
+|   |   |   |   |       +---13
+|   |   |   |   |       +---14
+|   |   |   |   |       +---15
+|   |   |   |   |       +---2
+|   |   |   |   |       +---3
+|   |   |   |   |       +---4
+|   |   |   |   |       +---5
+|   |   |   |   |       +---6
+|   |   |   |   |       +---7
+|   |   |   |   |       +---8
+|   |   |   |   |       \---9
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       +---mergeExtDexDebugAndroidTest
+|   |   |   |       +---mergeLibDexDebugAndroidTest
+|   |   |   |       |   +---0
+|   |   |   |       |   +---1
+|   |   |   |       |   +---10
+|   |   |   |       |   +---11
+|   |   |   |       |   +---12
+|   |   |   |       |   +---13
+|   |   |   |       |   +---14
+|   |   |   |       |   +---15
+|   |   |   |       |   +---2
+|   |   |   |       |   +---3
+|   |   |   |       |   +---4
+|   |   |   |       |   +---5
+|   |   |   |       |   +---6
+|   |   |   |       |   +---7
+|   |   |   |       |   +---8
+|   |   |   |       |   \---9
+|   |   |   |       \---mergeProjectDexDebugAndroidTest
+|   |   |   |           +---0
+|   |   |   |           +---1
+|   |   |   |           +---10
+|   |   |   |           +---11
+|   |   |   |           +---12
+|   |   |   |           +---13
+|   |   |   |           +---14
+|   |   |   |           +---15
+|   |   |   |           +---2
+|   |   |   |           +---3
+|   |   |   |           +---4
+|   |   |   |           +---5
+|   |   |   |           +---6
+|   |   |   |           +---7
+|   |   |   |           +---8
+|   |   |   |           \---9
+|   |   |   +---dex_archive_input_jar_hashes
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   +---dex_number_of_buckets_file
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   +---duplicate_classes_check
+|   |   |   |   +---debug
+|   |   |   |   |   \---checkDebugDuplicateClasses
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---checkDebugAndroidTestDuplicateClasses
+|   |   |   +---external_file_lib_dex_archives
+|   |   |   |   +---debug
+|   |   |   |   |   \---desugarDebugFileDependencies
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---desugarDebugAndroidTestFileDependencies
+|   |   |   +---external_libs_dex_archive
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---external_libs_dex_archive_with_artifact_transforms
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---global_synthetics_dex
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugGlobalSynthetics
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestGlobalSynthetics
+|   |   |   +---global_synthetics_external_lib
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---global_synthetics_external_libs_artifact_transform
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---global_synthetics_file_lib
+|   |   |   |   +---debug
+|   |   |   |   |   \---desugarDebugFileDependencies
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---desugarDebugAndroidTestFileDependencies
+|   |   |   +---global_synthetics_mixed_scope
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---global_synthetics_project
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   |           \---com
+|   |   |   |   |               \---flowbeats
+|   |   |   |   |                   \---app
+|   |   |   |   |                       +---activities
+|   |   |   |   |                       +---adapters
+|   |   |   |   |                       +---database
+|   |   |   |   |                       +---fragments
+|   |   |   |   |                       +---gesture
+|   |   |   |   |                       +---player
+|   |   |   |   |                       \---viewmodels
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---global_synthetics_subproject
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---incremental
+|   |   |   |   +---dataBindingGenBaseClassesDebug
+|   |   |   |   +---dataBindingGenBaseClassesDebugAndroidTest
+|   |   |   |   +---debug
+|   |   |   |   |   +---mergeDebugResources
+|   |   |   |   |   |   +---merged.dir
+|   |   |   |   |   |   |   +---values
+|   |   |   |   |   |   |   +---values-af
+|   |   |   |   |   |   |   +---values-am
+|   |   |   |   |   |   |   +---values-ar
+|   |   |   |   |   |   |   +---values-as
+|   |   |   |   |   |   |   +---values-az
+|   |   |   |   |   |   |   +---values-b+es+419
+|   |   |   |   |   |   |   +---values-b+sr+Latn
+|   |   |   |   |   |   |   +---values-be
+|   |   |   |   |   |   |   +---values-bg
+|   |   |   |   |   |   |   +---values-bn
+|   |   |   |   |   |   |   +---values-bs
+|   |   |   |   |   |   |   +---values-ca
+|   |   |   |   |   |   |   +---values-cs
+|   |   |   |   |   |   |   +---values-da
+|   |   |   |   |   |   |   +---values-de
+|   |   |   |   |   |   |   +---values-el
+|   |   |   |   |   |   |   +---values-en-rAU
+|   |   |   |   |   |   |   +---values-en-rCA
+|   |   |   |   |   |   |   +---values-en-rGB
+|   |   |   |   |   |   |   +---values-en-rIN
+|   |   |   |   |   |   |   +---values-en-rXC
+|   |   |   |   |   |   |   +---values-es
+|   |   |   |   |   |   |   +---values-es-rUS
+|   |   |   |   |   |   |   +---values-et
+|   |   |   |   |   |   |   +---values-eu
+|   |   |   |   |   |   |   +---values-fa
+|   |   |   |   |   |   |   +---values-fi
+|   |   |   |   |   |   |   +---values-fr
+|   |   |   |   |   |   |   +---values-fr-rCA
+|   |   |   |   |   |   |   +---values-gl
+|   |   |   |   |   |   |   +---values-gu
+|   |   |   |   |   |   |   +---values-h320dp-port-v13
+|   |   |   |   |   |   |   +---values-h360dp-land-v13
+|   |   |   |   |   |   |   +---values-h480dp-land-v13
+|   |   |   |   |   |   |   +---values-h550dp-port-v13
+|   |   |   |   |   |   |   +---values-h720dp-v13
+|   |   |   |   |   |   |   +---values-hdpi-v4
+|   |   |   |   |   |   |   +---values-hi
+|   |   |   |   |   |   |   +---values-hr
+|   |   |   |   |   |   |   +---values-hu
+|   |   |   |   |   |   |   +---values-hy
+|   |   |   |   |   |   |   +---values-in
+|   |   |   |   |   |   |   +---values-is
+|   |   |   |   |   |   |   +---values-it
+|   |   |   |   |   |   |   +---values-iw
+|   |   |   |   |   |   |   +---values-ja
+|   |   |   |   |   |   |   +---values-ka
+|   |   |   |   |   |   |   +---values-kk
+|   |   |   |   |   |   |   +---values-km
+|   |   |   |   |   |   |   +---values-kn
+|   |   |   |   |   |   |   +---values-ko
+|   |   |   |   |   |   |   +---values-ky
+|   |   |   |   |   |   |   +---values-land
+|   |   |   |   |   |   |   +---values-large-v4
+|   |   |   |   |   |   |   +---values-ldltr-v21
+|   |   |   |   |   |   |   +---values-ldrtl-v17
+|   |   |   |   |   |   |   +---values-lo
+|   |   |   |   |   |   |   +---values-lt
+|   |   |   |   |   |   |   +---values-lv
+|   |   |   |   |   |   |   +---values-mk
+|   |   |   |   |   |   |   +---values-ml
+|   |   |   |   |   |   |   +---values-mn
+|   |   |   |   |   |   |   +---values-mr
+|   |   |   |   |   |   |   +---values-ms
+|   |   |   |   |   |   |   +---values-my
+|   |   |   |   |   |   |   +---values-nb
+|   |   |   |   |   |   |   +---values-ne
+|   |   |   |   |   |   |   +---values-night-v8
+|   |   |   |   |   |   |   +---values-nl
+|   |   |   |   |   |   |   +---values-or
+|   |   |   |   |   |   |   +---values-pa
+|   |   |   |   |   |   |   +---values-pl
+|   |   |   |   |   |   |   +---values-port
+|   |   |   |   |   |   |   +---values-pt
+|   |   |   |   |   |   |   +---values-pt-rBR
+|   |   |   |   |   |   |   +---values-pt-rPT
+|   |   |   |   |   |   |   +---values-ro
+|   |   |   |   |   |   |   +---values-ru
+|   |   |   |   |   |   |   +---values-si
+|   |   |   |   |   |   |   +---values-sk
+|   |   |   |   |   |   |   +---values-sl
+|   |   |   |   |   |   |   +---values-small-v4
+|   |   |   |   |   |   |   +---values-sq
+|   |   |   |   |   |   |   +---values-sr
+|   |   |   |   |   |   |   +---values-sv
+|   |   |   |   |   |   |   +---values-sw
+|   |   |   |   |   |   |   +---values-sw600dp-v13
+|   |   |   |   |   |   |   +---values-ta
+|   |   |   |   |   |   |   +---values-te
+|   |   |   |   |   |   |   +---values-th
+|   |   |   |   |   |   |   +---values-tl
+|   |   |   |   |   |   |   +---values-tr
+|   |   |   |   |   |   |   +---values-uk
+|   |   |   |   |   |   |   +---values-ur
+|   |   |   |   |   |   |   +---values-uz
+|   |   |   |   |   |   |   +---values-v16
+|   |   |   |   |   |   |   +---values-v17
+|   |   |   |   |   |   |   +---values-v18
+|   |   |   |   |   |   |   +---values-v21
+|   |   |   |   |   |   |   +---values-v22
+|   |   |   |   |   |   |   +---values-v23
+|   |   |   |   |   |   |   +---values-v24
+|   |   |   |   |   |   |   +---values-v25
+|   |   |   |   |   |   |   +---values-v26
+|   |   |   |   |   |   |   +---values-v28
+|   |   |   |   |   |   |   +---values-v31
+|   |   |   |   |   |   |   +---values-v34
+|   |   |   |   |   |   |   +---values-vi
+|   |   |   |   |   |   |   +---values-w320dp-land-v13
+|   |   |   |   |   |   |   +---values-w360dp-port-v13
+|   |   |   |   |   |   |   +---values-w400dp-port-v13
+|   |   |   |   |   |   |   +---values-w600dp-land-v13
+|   |   |   |   |   |   |   +---values-watch-v20
+|   |   |   |   |   |   |   +---values-watch-v21
+|   |   |   |   |   |   |   +---values-xlarge-v4
+|   |   |   |   |   |   |   +---values-zh-rCN
+|   |   |   |   |   |   |   +---values-zh-rHK
+|   |   |   |   |   |   |   +---values-zh-rTW
+|   |   |   |   |   |   |   \---values-zu
+|   |   |   |   |   |   \---stripped.dir
+|   |   |   |   |   |       \---layout
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       |   +---values
+|   |   |   |   |       |   \---values-night-v8
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   |           \---layout
+|   |   |   |   +---debug-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---debugAndroidTest
+|   |   |   |   |   +---mergeDebugAndroidTestResources
+|   |   |   |   |   |   +---merged.dir
+|   |   |   |   |   |   |   +---values
+|   |   |   |   |   |   |   +---values-v18
+|   |   |   |   |   |   |   +---values-v21
+|   |   |   |   |   |   |   \---values-v28
+|   |   |   |   |   |   \---stripped.dir
+|   |   |   |   |   \---packageDebugAndroidTestResources
+|   |   |   |   |       +---merged.dir
+|   |   |   |   |       \---stripped.dir
+|   |   |   |   +---debugAndroidTest-mergeJavaRes
+|   |   |   |   |   \---zip-cache
+|   |   |   |   +---mergeDebugAndroidTestAssets
+|   |   |   |   +---mergeDebugAndroidTestJniLibFolders
+|   |   |   |   +---mergeDebugAssets
+|   |   |   |   +---mergeDebugJniLibFolders
+|   |   |   |   +---packageDebug
+|   |   |   |   |   \---tmp
+|   |   |   |   |       \---debug
+|   |   |   |   |           \---zip-cache
+|   |   |   |   \---packageDebugAndroidTest
+|   |   |   |       \---tmp
+|   |   |   |           \---debugAndroidTest
+|   |   |   |               \---zip-cache
+|   |   |   +---javac
+|   |   |   |   +---debug
+|   |   |   |   |   \---compileDebugJavaWithJavac
+|   |   |   |   |       \---classes
+|   |   |   |   |           \---com
+|   |   |   |   |               \---flowbeats
+|   |   |   |   |                   \---app
+|   |   |   |   |                       +---activities
+|   |   |   |   |                       +---adapters
+|   |   |   |   |                       +---database
+|   |   |   |   |                       +---databinding
+|   |   |   |   |                       +---fragments
+|   |   |   |   |                       +---gesture
+|   |   |   |   |                       +---models
+|   |   |   |   |                       +---player
+|   |   |   |   |                       +---utils
+|   |   |   |   |                       \---viewmodels
+|   |   |   |   +---debugAndroidTest
+|   |   |   |   |   \---compileDebugAndroidTestJavaWithJavac
+|   |   |   |   |       \---classes
+|   |   |   |   |           \---com
+|   |   |   |   |               \---example
+|   |   |   |   |                   \---flowbeats
+|   |   |   |   \---debugUnitTest
+|   |   |   |       \---compileDebugUnitTestJavaWithJavac
+|   |   |   |           \---classes
+|   |   |   |               \---com
+|   |   |   |                   \---example
+|   |   |   |                       \---flowbeats
+|   |   |   +---java_res
+|   |   |   |   \---debug
+|   |   |   |       \---processDebugJavaRes
+|   |   |   |           \---out
+|   |   |   |               \---com
+|   |   |   |                   \---flowbeats
+|   |   |   |                       \---app
+|   |   |   |                           +---activities
+|   |   |   |                           +---adapters
+|   |   |   |                           +---database
+|   |   |   |                           +---databinding
+|   |   |   |                           +---fragments
+|   |   |   |                           +---gesture
+|   |   |   |                           +---models
+|   |   |   |                           +---player
+|   |   |   |                           +---utils
+|   |   |   |                           \---viewmodels
+|   |   |   +---linked_resources_binary_format
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestResources
+|   |   |   +---local_only_symbol_list
+|   |   |   |   +---debug
+|   |   |   |   |   \---parseDebugLocalResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---parseDebugAndroidTestLocalResources
+|   |   |   +---manifest_merge_blame_file
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugMainManifest
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestManifest
+|   |   |   +---merged_java_res
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugJavaResource
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestJavaResource
+|   |   |   +---merged_jni_libs
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugJniLibFolders
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestJniLibFolders
+|   |   |   |           \---out
+|   |   |   +---merged_manifest
+|   |   |   |   \---debug
+|   |   |   |       \---processDebugMainManifest
+|   |   |   +---merged_manifests
+|   |   |   |   \---debug
+|   |   |   |       \---processDebugManifest
+|   |   |   +---merged_native_libs
+|   |   |   |   \---debug
+|   |   |   |       \---mergeDebugNativeLibs
+|   |   |   |           \---out
+|   |   |   |               \---lib
+|   |   |   |                   +---arm64-v8a
+|   |   |   |                   +---armeabi-v7a
+|   |   |   |                   +---x86
+|   |   |   |                   \---x86_64
+|   |   |   +---merged_res
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestResources
+|   |   |   +---merged_res_blame_folder
+|   |   |   |   +---debug
+|   |   |   |   |   \---mergeDebugResources
+|   |   |   |   |       \---out
+|   |   |   |   |           +---multi-v2
+|   |   |   |   |           \---single
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---mergeDebugAndroidTestResources
+|   |   |   |           \---out
+|   |   |   |               \---multi-v2
+|   |   |   +---merged_test_only_native_libs
+|   |   |   |   \---debug
+|   |   |   |       \---mergeDebugNativeLibs
+|   |   |   |           \---out
+|   |   |   +---mixed_scope_dex_archive
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---navigation_json
+|   |   |   |   \---debug
+|   |   |   |       \---extractDeepLinksDebug
+|   |   |   +---nested_resources_validation_report
+|   |   |   |   +---debug
+|   |   |   |   |   \---generateDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---generateDebugAndroidTestResources
+|   |   |   +---packaged_manifests
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugManifestForPackage
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestManifest
+|   |   |   +---packaged_res
+|   |   |   |   +---debug
+|   |   |   |   |   \---packageDebugResources
+|   |   |   |   |       +---color
+|   |   |   |   |       +---drawable
+|   |   |   |   |       +---layout
+|   |   |   |   |       +---menu
+|   |   |   |   |       +---mipmap-anydpi-v26
+|   |   |   |   |       +---mipmap-hdpi-v4
+|   |   |   |   |       +---mipmap-mdpi-v4
+|   |   |   |   |       +---mipmap-xhdpi-v4
+|   |   |   |   |       +---mipmap-xxhdpi-v4
+|   |   |   |   |       +---mipmap-xxxhdpi-v4
+|   |   |   |   |       +---values
+|   |   |   |   |       +---values-night-v8
+|   |   |   |   |       \---xml
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---packageDebugAndroidTestResources
+|   |   |   +---project_dex_archive
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   |           \---com
+|   |   |   |   |               \---flowbeats
+|   |   |   |   |                   \---app
+|   |   |   |   |                       +---activities
+|   |   |   |   |                       +---adapters
+|   |   |   |   |                       +---database
+|   |   |   |   |                       +---databinding
+|   |   |   |   |                       +---fragments
+|   |   |   |   |                       +---gesture
+|   |   |   |   |                       +---models
+|   |   |   |   |                       +---player
+|   |   |   |   |                       +---utils
+|   |   |   |   |                       \---viewmodels
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   |               \---com
+|   |   |   |                   \---example
+|   |   |   |                       \---flowbeats
+|   |   |   +---runtime_symbol_list
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestResources
+|   |   |   +---signing_config_versions
+|   |   |   |   +---debug
+|   |   |   |   |   \---writeDebugSigningConfigVersions
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---writeDebugAndroidTestSigningConfigVersions
+|   |   |   +---stable_resource_ids_file
+|   |   |   |   +---debug
+|   |   |   |   |   \---processDebugResources
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---processDebugAndroidTestResources
+|   |   |   +---stripped_native_libs
+|   |   |   |   \---debug
+|   |   |   |       \---stripDebugDebugSymbols
+|   |   |   |           \---out
+|   |   |   |               \---lib
+|   |   |   |                   +---arm64-v8a
+|   |   |   |                   +---armeabi-v7a
+|   |   |   |                   +---x86
+|   |   |   |                   \---x86_64
+|   |   |   +---sub_project_dex_archive
+|   |   |   |   +---debug
+|   |   |   |   |   \---dexBuilderDebug
+|   |   |   |   |       \---out
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---dexBuilderDebugAndroidTest
+|   |   |   |           \---out
+|   |   |   +---symbol_list_with_package_name
+|   |   |   |   +---debug
+|   |   |   |   |   \---generateDebugRFile
+|   |   |   |   \---debugAndroidTest
+|   |   |   |       \---generateDebugAndroidTestRFile
+|   |   |   +---tmp
+|   |   |   |   \---manifest
+|   |   |   |       \---androidTest
+|   |   |   |           \---debug
+|   |   |   \---validate_signing_config
+|   |   |       +---debug
+|   |   |       |   \---validateSigningDebug
+|   |   |       \---debugAndroidTest
+|   |   |           \---validateSigningDebugAndroidTest
+|   |   +---outputs
+|   |   |   +---apk
+|   |   |   |   +---androidTest
+|   |   |   |   |   \---debug
+|   |   |   |   \---debug
+|   |   |   \---logs
+|   |   \---tmp
+|   |       +---compileDebugAndroidTestJavaWithJavac
+|   |       +---compileDebugJavaWithJavac
+|   |       \---compileDebugUnitTestJavaWithJavac
+|   \---src
+|       +---androidTest
+|       |   \---java
+|       |       \---com
+|       |           \---example
+|       |               \---flowbeats
+|       +---main
+|       |   +---assets
+|       |   +---java
+|       |   |   \---com
+|       |   |       +---example
+|       |   |       \---flowbeats
+|       |   |           \---app
+|       |   |               +---activities
+|       |   |               +---adapters
+|       |   |               +---database
+|       |   |               +---fragments
+|       |   |               +---gesture
+|       |   |               +---models
+|       |   |               +---player
+|       |   |               +---utils
+|       |   |               +---viewmodels
+|       |   |               +---views
+|       |   |               \---{activities,adapters,fragments,models,gesture,player,database,utils,views}
+|       |   \---res
+|       |       +---color
+|       |       +---drawable
+|       |       +---font
+|       |       +---layout
+|       |       +---menu
+|       |       +---mipmap-anydpi-v26
+|       |       +---mipmap-hdpi
+|       |       +---mipmap-mdpi
+|       |       +---mipmap-xhdpi
+|       |       +---mipmap-xxhdpi
+|       |       +---mipmap-xxxhdpi
+|       |       +---values
+|       |       +---values-night
+|       |       +---xml
+|       |       \---{layout,drawable,values,anim,font,xml,raw}
+|       \---test
+|           \---java
+|               \---com
+|                   \---example
+|                       \---flowbeats
++---build
+|   \---reports
+|       \---problems
+\---gradle
+    \---wrapper

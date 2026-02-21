@@ -1,0 +1,52 @@
+FlowBeats/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/flowbeats/app/
+│   │   │   │   ├── activities/
+│   │   │   │   │   ├── SplashActivity.java
+│   │   │   │   │   ├── LoginActivity.java
+│   │   │   │   │   ├── SignUpActivity.java
+│   │   │   │   │   ├── MainActivity.java
+│   │   │   │   │   └── PlaylistActivity.java
+│   │   │   │   ├── adapters/
+│   │   │   │   │   ├── SongAdapter.java
+│   │   │   │   │   └── PlaylistAdapter.java
+│   │   │   │   ├── fragments/
+│   │   │   │   │   ├── HomeFragment.java
+│   │   │   │   │   ├── LibraryFragment.java
+│   │   │   │   │   └── SearchFragment.java
+│   │   │   │   ├── models/
+│   │   │   │   │   ├── Song.java
+│   │   │   │   │   ├── Playlist.java
+│   │   │   │   │   └── User.java
+│   │   │   │   ├── gesture/
+│   │   │   │   │   ├── GestureDetector.java
+│   │   │   │   │   ├── HandGestureClassifier.java
+│   │   │   │   │   └── GestureListener.java
+│   │   │   │   ├── player/
+│   │   │   │   │   ├── MusicPlayer.java
+│   │   │   │   │   └── MusicService.java
+│   │   │   │   ├── database/
+│   │   │   │   │   ├── AppDatabase.java
+│   │   │   │   │   ├── PlaylistDao.java
+│   │   │   │   │   └── SongDao.java
+│   │   │   │   ├── utils/
+│   │   │   │   │   ├── SharedPreferenceManager.java
+│   │   │   │   │   ├── PermissionManager.java
+│   │   │   │   │   └── MediaScanner.java
+│   │   │   │   └── views/
+│   │   │   │       ├── MiniPlayerView.java
+│   │   │   │       └── GestureOverlayView.java
+│   │   │   ├── res/
+│   │   │   │   ├── layout/
+│   │   │   │   ├── drawable/
+│   │   │   │   ├── values/
+│   │   │   │   ├── anim/
+│   │   │   │   ├── font/
+│   │   │   │   └── xml/
+│   │   │   └── AndroidManifest.xml
+│   │   └── build.gradle
+│   └── build.gradle
+├── gradle/
+└── settings.gradle

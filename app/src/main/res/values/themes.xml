@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base FlowBeats Theme -->
+    <style name="Theme.FlowBeats" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/purple_primary</item>
+        <item name="colorPrimaryDark">@color/purple_primary_dark</item>
+        <item name="colorAccent">@color/purple_accent</item>
+        
+        <!-- Background colors -->
+        <item name="android:windowBackground">@drawable/bg_gradient_main</item>
+        <item name="android:colorBackground">@color/background_primary</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/background_primary</item>
+        
+        <!-- Material Design Components -->
+        <item name="materialButtonStyle">@style/Widget.FlowBeats.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.FlowBeats.CardView</item>
+        <item name="bottomNavigationStyle">@style/Widget.FlowBeats.BottomNavigation</item>
+    </style>
+    
+    <!-- Splash Theme -->
+    <style name="Theme.FlowBeats.Splash" parent="Theme.FlowBeats">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="Theme.FlowBeats.NoActionBar" parent="Theme.FlowBeats" />
+    
+    <style name="Widget.FlowBeats" parent="android:Widget" />
+    
+    <!-- Button Styles -->
+    <style name="Widget.FlowBeats.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="backgroundTint">@color/purple_accent</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    
+    <style name="Widget.FlowBeats.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+        <item name="strokeColor">@color/purple_accent</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:textColor">@color/purple_accent</item>
+    </style>
+    
+    <!-- Card Styles -->
+    <style name="Widget.FlowBeats.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="cardBackgroundColor">@color/background_card</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <style name="Widget.FlowBeats.CardView.Glass">
+        <item name="cardBackgroundColor">@color/glass_background</item>
+        <item name="strokeColor">@color/glass_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+    
+    <!-- Bottom Navigation -->
+    <style name="Widget.FlowBeats.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@drawable/bottom_nav_tint</item>
+        <item name="itemTextColor">@drawable/bottom_nav_tint</item>
+        <item name="itemRippleColor">@color/ripple_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:background">@drawable/bg_bottom_nav</item>
+        <item name="elevation">16dp</item>
+    </style>
+    
+    <!-- Text Styles -->
+    <style name="TextAppearance.FlowBeats.Headline" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    
+    <style name="TextAppearance.FlowBeats.Title" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="TextAppearance.FlowBeats.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="TextAppearance.FlowBeats.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <!-- Search Bar -->
+    <style name="Widget.FlowBeats.SearchBar">
+        <item name="android:background">@drawable/bg_search_bar</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <!-- Compatibility Aliases -->
+    <style name="Button.Primary" parent="Widget.FlowBeats.Button" />
+    <style name="Text.Headline1" parent="TextAppearance.FlowBeats.Headline" />
+    <style name="Text.Body1" parent="TextAppearance.FlowBeats.Body" />
+    <style name="Text.Body2" parent="TextAppearance.FlowBeats.Subtitle" />
+    <style name="Card.Glass" parent="Widget.FlowBeats.CardView.Glass" />
+    
+    <style name="TextInput.Glass" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/glass_background</item>
+        <item name="boxStrokeColor">@color/purple_accent</item>
+        <item name="hintTextColor">@color/purple_accent</item>
+    </style>
+</resources>
