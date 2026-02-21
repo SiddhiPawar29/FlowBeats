@@ -145,3 +145,4 @@ This project is for educational purposes.
 ---
 
 **Enjoy controlling your music with gestures! 🎵✋**
+
