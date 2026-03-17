@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer vinyl body -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#0A0815"/>
+            <stroke android:width="1dp" android:color="#2D1B69"/>
+        </shape>
+    </item>
+    <!-- Ring 1 -->
+    <item
+        android:left="20dp" android:top="20dp"
+        android:right="20dp" android:bottom="20dp">
+        <shape android:shape="oval">
+            <stroke android:width="1dp" android:color="#1A1230"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <!-- Ring 2 -->
+    <item
+        android:left="40dp" android:top="40dp"
+        android:right="40dp" android:bottom="40dp">
+        <shape android:shape="oval">
+            <stroke android:width="1dp" android:color="#1A1230"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <!-- Ring 3 -->
+    <item
+        android:left="60dp" android:top="60dp"
+        android:right="60dp" android:bottom="60dp">
+        <shape android:shape="oval">
+            <stroke android:width="1dp" android:color="#1A1230"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <!-- Ring 4 -->
+    <item
+        android:left="80dp" android:top="80dp"
+        android:right="80dp" android:bottom="80dp">
+        <shape android:shape="oval">
+            <stroke android:width="1dp" android:color="#221640"/>
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <!-- Center hole -->
+    <item
+        android:left="100dp" android:top="100dp"
+        android:right="100dp" android:bottom="100dp">
+        <shape android:shape="oval">
+            <solid android:color="#221640"/>
+            <stroke android:width="2dp" android:color="#4A2C8A"/>
+        </shape>
+    </item>
+</layer-list>

@@ -40,22 +40,22 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void animateSplash() {
-        android.widget.TextView appName = findViewById(R.id.tvAppNameSplash);
-        android.widget.TextView tagline = findViewById(R.id.tvTagline);
+        android.view.View logoContainer = findViewById(R.id.logoContainer);
+        android.view.View progressBar = findViewById(R.id.progressBar);
 
-        if (appName != null) {
-            appName.animate()
+        if (logoContainer != null) {
+            logoContainer.animate()
                     .alpha(1f)
                     .setDuration(800)
                     .setStartDelay(500)
                     .start();
         }
 
-        if (tagline != null) {
-            tagline.animate()
+        if (progressBar != null) {
+            progressBar.animate()
                     .alpha(1f)
-                    .setDuration(800)
-                    .setStartDelay(800)
+                    .setDuration(500)
+                    .setStartDelay(1000)
                     .start();
         }
     }

@@ -163,5 +163,12 @@ public class GestureDetector {
         if (gestureClassifier != null) {
             gestureClassifier.close();
         }
+        try {
+            ListenableFuture<ProcessCameraProvider> cameraProviderFuture = ProcessCameraProvider.getInstance(context);
+            ProcessCameraProvider cameraProvider = cameraProviderFuture.get();
+            cameraProvider.unbindAll();
+        } catch (Exception e) {
+            Log.e(TAG, "Failed to unbind camera: " + e.getMessage());
+        }
     }
 }

@@ -56,11 +56,20 @@ public class LibraryFragment extends Fragment {
 
     private void setupRecyclerView() {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter = new PlaylistAdapter(playlist -> {
+        adapter = new PlaylistAdapter(true, playlist -> {
             Intent intent = new Intent(getContext(), PlaylistActivity.class);
             intent.putExtra("playlist_id", playlist.getId());
             intent.putExtra("playlist_name", playlist.getName());
             startActivity(intent);
+        }, playlist -> {
+            new androidx.appcompat.app.AlertDialog.Builder(requireContext())
+                .setTitle("Delete Playlist")
+                .setMessage("Are you sure you want to delete '" + playlist.getName() + "'?")
+                .setPositiveButton("Delete", (dialog, which) -> {
+                    viewModel.deletePlaylist(playlist);
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
         });
         recyclerView.setAdapter(adapter);
     }

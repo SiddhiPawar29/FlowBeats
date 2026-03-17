@@ -45,6 +45,10 @@ public class MusicViewModel extends AndroidViewModel {
         playlistRepository.insert(new Playlist(name));
     }
 
+    public void deletePlaylist(Playlist playlist) {
+        playlistRepository.delete(playlist);
+    }
+
     public void addSongToPlaylist(int playlistId, Song song) {
         playlistRepository.addSongToPlaylist(playlistId, song);
     }
@@ -86,5 +90,11 @@ public class MusicViewModel extends AndroidViewModel {
             }
         }
         searchResults.setValue(filtered);
+    }
+
+    public void browseAll() {
+        if (allSongs.getValue() != null) {
+            searchResults.setValue(new ArrayList<>(allSongs.getValue()));
+        }
     }
 }

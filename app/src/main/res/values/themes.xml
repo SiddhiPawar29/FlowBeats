@@ -3,13 +3,13 @@
     <!-- Base FlowBeats Theme -->
     <style name="Theme.FlowBeats" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary colors -->
-        <item name="colorPrimary">@color/purple_primary</item>
-        <item name="colorPrimaryDark">@color/purple_primary_dark</item>
-        <item name="colorAccent">@color/purple_accent</item>
+        <item name="colorPrimary">@color/electric_purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
         
         <!-- Background colors -->
         <item name="android:windowBackground">@drawable/bg_gradient_main</item>
-        <item name="android:colorBackground">@color/background_primary</item>
+        <item name="android:colorBackground">@color/bg_primary</item>
         
         <!-- Text colors -->
         <item name="android:textColorPrimary">@color/text_primary</item>
@@ -21,7 +21,7 @@
         <item name="android:windowLightStatusBar">false</item>
         
         <!-- Navigation bar -->
-        <item name="android:navigationBarColor">@color/background_primary</item>
+        <item name="android:navigationBarColor">@color/bg_primary</item>
         
         <!-- Material Design Components -->
         <item name="materialButtonStyle">@style/Widget.FlowBeats.Button</item>
@@ -42,23 +42,23 @@
     <style name="Widget.FlowBeats.Button" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">24dp</item>
         <item name="android:textColor">@color/text_primary</item>
-        <item name="backgroundTint">@color/purple_accent</item>
+        <item name="backgroundTint">@color/pink_accent</item>
         <item name="android:elevation">4dp</item>
         <item name="android:stateListAnimator">@null</item>
     </style>
     
     <style name="Widget.FlowBeats.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="cornerRadius">24dp</item>
-        <item name="strokeColor">@color/purple_accent</item>
+        <item name="strokeColor">@color/pink_accent</item>
         <item name="strokeWidth">2dp</item>
-        <item name="android:textColor">@color/purple_accent</item>
+        <item name="android:textColor">@color/pink_accent</item>
     </style>
     
     <!-- Card Styles -->
     <style name="Widget.FlowBeats.CardView" parent="Widget.MaterialComponents.CardView">
         <item name="cardCornerRadius">20dp</item>
         <item name="cardElevation">8dp</item>
-        <item name="cardBackgroundColor">@color/background_card</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
         <item name="contentPadding">16dp</item>
     </style>
     
@@ -121,7 +121,7 @@
     
     <style name="TextInput.Glass" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxBackgroundColor">@color/glass_background</item>
-        <item name="boxStrokeColor">@color/purple_accent</item>
-        <item name="hintTextColor">@color/purple_accent</item>
+        <item name="boxStrokeColor">@color/pink_accent</item>
+        <item name="hintTextColor">@color/pink_accent</item>
     </style>
 </resources>

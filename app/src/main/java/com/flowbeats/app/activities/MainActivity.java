@@ -28,6 +28,9 @@ import com.flowbeats.app.player.MusicPlayer;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Calendar;
+import android.widget.FrameLayout;
+import com.flowbeats.utils.DiskAnimationHelper;
+import com.flowbeats.utils.GestureIndicatorHelper;
 
 public class MainActivity extends AppCompatActivity implements GestureListener {
     private static final int CAMERA_PERMISSION_CODE = 100;
@@ -42,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
     private View miniPlayer;
     private TextView tvMiniTitle, tvMiniArtist;
     private View btnMiniPlayPause;
+    private DiskAnimationHelper miniDiskHelper;
+    private GestureIndicatorHelper gestureHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,28 +77,33 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
         tvGestureIndicator = findViewById(R.id.tvGestureIndicator);
         bottomNavigation = findViewById(R.id.bottomNavigation);
 
+        if (tvGestureIndicator != null) {
+            gestureHelper = new GestureIndicatorHelper(tvGestureIndicator);
+        }
+
         miniPlayer = findViewById(R.id.miniPlayer);
         tvMiniTitle = findViewById(R.id.tvSongTitle);
         tvMiniArtist = findViewById(R.id.tvArtistName);
         btnMiniPlayPause = findViewById(R.id.btnPlayPause);
 
+        if (miniPlayer != null) {
+            FrameLayout miniDisk = miniPlayer.findViewById(R.id.diskContainer);
+            if (miniDisk != null) {
+                miniDiskHelper = new DiskAnimationHelper(miniDisk);
+            }
+            miniPlayer.setOnClickListener(v -> {
+                // Open full player
+                Intent intent = new Intent(this, PlayerActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_up, 0);
+            });
+        }
+
         if (btnMiniPlayPause != null) {
             btnMiniPlayPause.setOnClickListener(v -> musicPlayer.togglePlayPause());
         }
 
-        if (miniPlayer != null) {
-            miniPlayer.setOnClickListener(v -> {
-                // Open full player
-                Intent intent = new Intent(MainActivity.this, PlaylistActivity.class);
-                if (intent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(intent);
-                }
-            });
-        }
-
         setupMusicPlayerListener();
-        // setupProfile(); // Moved to HomeFragment
-        // updateGreeting(); // Moved to HomeFragment
     }
 
     // Legacy methods removed (moved to Fragment)
@@ -107,6 +117,12 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
                     if (btnMiniPlayPause instanceof android.widget.ImageButton) {
                         ((android.widget.ImageButton) btnMiniPlayPause).setImageResource(
                                 isPlaying ? R.drawable.ic_pause : R.drawable.ic_play);
+                    }
+                    if (miniDiskHelper != null) {
+                        if (isPlaying)
+                            miniDiskHelper.startRotation();
+                        else
+                            miniDiskHelper.pauseRotation();
                     }
                 });
             }
@@ -125,6 +141,8 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
                             tvMiniArtist.setText(song.getArtist());
                     } else {
                         miniPlayer.setVisibility(View.GONE);
+                        if (miniDiskHelper != null)
+                            miniDiskHelper.stopRotation();
                     }
                 });
             }
@@ -146,6 +164,12 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
 
             return loadFragment(fragment);
         });
+    }
+
+    public void switchToLibraryTab() {
+        if (bottomNavigation != null) {
+            bottomNavigation.setSelectedItemId(R.id.navigation_library);
+        }
     }
 
     private boolean loadFragment(Fragment fragment) {
@@ -209,15 +233,7 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
 
     @Override
     public void onGestureDetected(HandGestureClassifier.GestureType gesture) {
-        runOnUiThread(() -> {
-            if (tvGestureIndicator != null) {
-                tvGestureIndicator.setVisibility(View.VISIBLE);
-                tvGestureIndicator.setText(gesture.name());
-
-                tvGestureIndicator.postDelayed(() -> tvGestureIndicator.setVisibility(View.GONE), 1500);
-            }
-            handleGesture(gesture);
-        });
+        runOnUiThread(() -> handleGesture(gesture));
     }
 
     private void handleGesture(HandGestureClassifier.GestureType gesture) {
@@ -227,29 +243,41 @@ public class MainActivity extends AppCompatActivity implements GestureListener {
                 if (!musicPlayer.isPlaying()) {
                     musicPlayer.togglePlayPause();
                     message = "Play Music";
+                    if (gestureHelper != null)
+                        gestureHelper.showGesture("✋  Play");
                 }
                 break;
             case FIST:
                 if (musicPlayer.isPlaying()) {
                     musicPlayer.togglePlayPause();
                     message = "Stop Music";
+                    if (gestureHelper != null)
+                        gestureHelper.showGesture("✊  Stop");
                 }
                 break;
             case TWO_FINGERS:
                 musicPlayer.playNext();
                 message = "Next Song";
+                if (gestureHelper != null)
+                    gestureHelper.showGesture("✌️  Next Song");
                 break;
             case THREE_FINGERS:
                 musicPlayer.playPrevious();
                 message = "Previous Song";
+                if (gestureHelper != null)
+                    gestureHelper.showGesture("3️⃣  Previous Song");
                 break;
             case POINT_UP:
                 musicPlayer.volumeUp();
                 message = "Volume Up";
+                if (gestureHelper != null)
+                    gestureHelper.showGesture("☝️  Volume Up");
                 break;
-            case THUMBS_UP:
+            case PINKY_UP:
                 musicPlayer.volumeDown();
                 message = "Volume Down";
+                if (gestureHelper != null)
+                    gestureHelper.showGesture("🤙  Volume Down");
                 break;
         }
 

@@ -181,6 +181,26 @@ public class MusicPlayer {
         return null;
     }
 
+    public int getCurrentPosition() {
+        if (mediaPlayer != null) {
+            return mediaPlayer.getCurrentPosition();
+        }
+        return 0;
+    }
+
+    public int getDuration() {
+        if (mediaPlayer != null) {
+            return mediaPlayer.getDuration();
+        }
+        return 0;
+    }
+
+    public void seekTo(int position) {
+        if (mediaPlayer != null) {
+            mediaPlayer.seekTo(position);
+        }
+    }
+
     public void release() {
         if (mediaPlayer != null) {
             mediaPlayer.release();

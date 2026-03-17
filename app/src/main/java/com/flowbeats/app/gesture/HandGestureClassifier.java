@@ -25,12 +25,13 @@ public class HandGestureClassifier {
         TWO_FINGERS, // Next song
         THREE_FINGERS, // Previous song
         POINT_UP, // Volume up
-        THUMBS_UP, // Volume down
+        PINKY_UP, // Volume down
         UNKNOWN
     }
 
     private HandLandmarker handLandmarker;
     private GestureListener gestureListener;
+    private long lastActionTime = 0;
 
     public HandGestureClassifier(Context context, GestureListener listener) {
         this.gestureListener = listener;
@@ -81,8 +82,20 @@ public class HandGestureClassifier {
 
                 Log.d(TAG, "Classified gesture: " + gesture);
 
+                Log.d(TAG, "Classified gesture: " + gesture);
+
                 if (gesture != GestureType.UNKNOWN && gestureListener != null) {
-                    gestureListener.onGestureDetected(gesture);
+                    boolean isVolumeGesture = (gesture == GestureType.POINT_UP || gesture == GestureType.PINKY_UP);
+                    long currentTime = System.currentTimeMillis();
+
+                    if (isVolumeGesture || currentTime - lastActionTime >= 2000) {
+                        if (!isVolumeGesture) {
+                            lastActionTime = currentTime;
+                        }
+                        gestureListener.onGestureDetected(gesture);
+                    } else {
+                        Log.d(TAG, "Gesture skipped due to cooldown: " + gesture);
+                    }
                 }
             } else {
                 // Log.v(TAG, "No landmarks detected"); // Verbose to avoid spam
@@ -98,14 +111,15 @@ public class HandGestureClassifier {
         }
 
         // Finger tip indices: Thumb=4, Index=8, Middle=12, Ring=16, Pinky=20
-        // Finger base indices: Thumb=2, Index=5, Middle=9, Ring=13, Pinky=17
-        // Use MCP (base) and Tip to check extension
+        // PIP/IP indices for strict check: Thumb=3, Index=6, Middle=10, Ring=14,
+        // Pinky=18
+        // Use PIP and Tip to check strict extension
 
-        boolean thumbExtended = isFingerExtended(landmarks, 4, 2);
-        boolean indexExtended = isFingerExtended(landmarks, 8, 5);
-        boolean middleExtended = isFingerExtended(landmarks, 12, 9);
-        boolean ringExtended = isFingerExtended(landmarks, 16, 13);
-        boolean pinkyExtended = isFingerExtended(landmarks, 20, 17);
+        boolean thumbExtended = isFingerExtended(landmarks, 4, 3);
+        boolean indexExtended = isFingerExtended(landmarks, 8, 6);
+        boolean middleExtended = isFingerExtended(landmarks, 12, 10);
+        boolean ringExtended = isFingerExtended(landmarks, 16, 14);
+        boolean pinkyExtended = isFingerExtended(landmarks, 20, 18);
 
         int extendedCount = 0;
         if (thumbExtended)
@@ -120,47 +134,36 @@ public class HandGestureClassifier {
             extendedCount++;
 
         // Fist - 0 fingers extended (Stop/Pause)
-        if (extendedCount == 0) {
-            return GestureType.FIST;
-        }
-
-        // Also accept just thumb curled as potential fist if others are curled
-        if (extendedCount == 1 && thumbExtended) {
+        // Also accept just thumb curled/extended as potential fist if others are curled
+        if (extendedCount == 0 || (extendedCount == 1 && thumbExtended)) {
             return GestureType.FIST;
         }
 
         // Palm open - 5 fingers extended (Play)
-        if (extendedCount == 5) {
+        // Also accept 4 fingers extended without thumb as Palm open for leniency
+        if (extendedCount == 5 || (extendedCount == 4 && !thumbExtended)) {
             return GestureType.PALM_OPEN;
         }
 
-        // Also accept 4 fingers (no thumb) as Palm Open if user struggles with thumb
-        if (indexExtended && middleExtended && ringExtended && pinkyExtended && !thumbExtended) {
-            return GestureType.PALM_OPEN;
+        // Three fingers - index, middle, ring EXTENDED, pinky and thumb CURLED
+        // (Previous song)
+        if (indexExtended && middleExtended && ringExtended && !pinkyExtended && !thumbExtended) {
+            return GestureType.THREE_FINGERS;
         }
 
         // Two fingers - index and middle EXTENDED, others CURLED (Next song)
-        if (indexExtended && middleExtended && !ringExtended && !pinkyExtended) {
+        if (indexExtended && middleExtended && !ringExtended && !pinkyExtended && !thumbExtended) {
             return GestureType.TWO_FINGERS;
-        }
-
-        // Three fingers - index, middle, ring EXTENDED, pinky CURLED (Previous song)
-        if (indexExtended && middleExtended && ringExtended && !pinkyExtended) {
-            return GestureType.THREE_FINGERS;
         }
 
         // Point up - only index finger extended (Volume Up)
         if (indexExtended && !middleExtended && !ringExtended && !pinkyExtended && !thumbExtended) {
-            // Optional: Check orientation
             return GestureType.POINT_UP;
         }
 
-        // Thumbs Up - only thumb extended (Volume Down)
-        // We need to be careful with "isFingerExtended" for thumb as it works
-        // differently.
-        // But assuming generic check works:
-        if (thumbExtended && !indexExtended && !middleExtended && !ringExtended && !pinkyExtended) {
-            return GestureType.THUMBS_UP;
+        // Pinky up - only pinky finger extended (Volume Down)
+        if (!indexExtended && !middleExtended && !ringExtended && pinkyExtended && !thumbExtended) {
+            return GestureType.PINKY_UP;
         }
 
         return GestureType.UNKNOWN;

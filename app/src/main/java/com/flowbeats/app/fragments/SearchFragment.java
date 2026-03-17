@@ -45,6 +45,15 @@ public class SearchFragment extends Fragment {
         setupRecyclerView();
         setupViewModel();
         setupSearchInput();
+
+        android.widget.TextView tvBrowseAll = view.findViewById(R.id.tvBrowseAll);
+        if (tvBrowseAll != null) {
+            tvBrowseAll.setOnClickListener(v -> {
+                if (viewModel != null) {
+                    viewModel.browseAll();
+                }
+            });
+        }
     }
 
     private void setupRecyclerView() {

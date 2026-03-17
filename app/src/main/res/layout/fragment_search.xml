@@ -5,28 +5,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg_gradient_main"
     android:fitsSystemWindows="true"
-    android:padding="@dimen/padding_content">
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
 
-    <!-- App Name -->
+    <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.FlowBeats.Title"
-        android:textSize="24sp"
-        android:fontFamily="sans-serif-black"
-        android:letterSpacing="0.05"
-        android:layout_marginTop="@dimen/spacing_md"
-        android:layout_marginBottom="@dimen/spacing_lg" />
+        android:text="FlowBeats"
+        android:textColor="@color/text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.03"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="4dp"/>
 
-    <!-- Search Bar -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="@color/text_primary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Search Bar (Glass card) -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="56dp"
         app:cardCornerRadius="28dp"
-        app:cardElevation="@dimen/elevation_sm"
+        app:cardElevation="4dp"
         app:cardBackgroundColor="@color/glass_background"
         app:strokeWidth="1dp"
         app:strokeColor="@color/glass_border">
@@ -37,46 +46,49 @@
 
             <ImageView
                 android:id="@+id/ivSearchIcon"
-                android:layout_width="@dimen/icon_size_md"
-                android:layout_height="@dimen/icon_size_md"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
                 android:src="@drawable/ic_search"
-                android:tint="@color/text_hint"
-                android:layout_marginStart="@dimen/spacing_md"
+                android:tint="@color/text_tertiary"
+                android:layout_marginStart="18dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <EditText
                 android:id="@+id/etSearch"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:hint="@string/search_hint"
+                android:hint="Songs, artists, albums…"
                 android:textColorHint="@color/text_hint"
                 android:textColor="@color/text_primary"
                 android:background="@android:color/transparent"
-                android:paddingStart="@dimen/spacing_md"
-                android:paddingEnd="@dimen/spacing_md"
+                android:paddingStart="12dp"
+                android:paddingEnd="16dp"
                 android:inputType="text"
                 android:imeOptions="actionSearch"
                 android:maxLines="1"
+                android:textSize="15sp"
                 app:layout_constraintStart_toEndOf="@id/ivSearchIcon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- Browse All Section -->
+    <!-- Browse All label -->
     <TextView
         android:id="@+id/tvBrowseAll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/browse_all"
-        android:textAppearance="@style/TextAppearance.FlowBeats.Title"
-        android:layout_marginTop="@dimen/spacing_xl"
-        android:layout_marginBottom="@dimen/spacing_md" />
+        android:text="Browse All"
+        android:textColor="@color/text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="12dp"/>
 
     <!-- Search Results RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
@@ -84,8 +96,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingBottom="140dp"
+        android:paddingBottom="150dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_song" />
+        tools:listitem="@layout/item_song"/>
 
 </LinearLayout>

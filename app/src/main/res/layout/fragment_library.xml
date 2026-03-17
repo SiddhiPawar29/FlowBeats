@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/transparent"
-        android:fitsSystemWindows="true"
         app:elevation="0dp">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -25,28 +24,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="@dimen/padding_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="56dp"
+                android:paddingBottom="16dp"
                 app:layout_collapseMode="parallax">
 
-                <!-- Header -->
-                <TextView
-                    android:id="@+id/tvLibraryTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_md"
-                    android:text="@string/your_library"
-                    android:textAppearance="@style/TextAppearance.FlowBeats.Headline" />
+                <!-- Header Row -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:id="@+id/tvLibrarySubtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/spacing_xs"
-                    android:layout_marginBottom="@dimen/spacing_lg"
-                    android:text="@string/all_music"
-                    android:textAppearance="@style/TextAppearance.FlowBeats.Subtitle" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                <!-- Tab Layout -->
+                        <TextView
+                            android:id="@+id/tvLibraryTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your Library"
+                            android:textColor="@color/text_primary"
+                            android:textSize="30sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvLibrarySubtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="All your music in one place"
+                            android:textColor="@color/text_tertiary"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Stats row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical">
+
+                    <!-- Songs count chip -->
+
+                    <View
+                        android:layout_width="12dp"
+                        android:layout_height="0dp"/>
+
+                    <!-- Recently added chip -->
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -54,20 +89,42 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Content -->
+    <!-- Songs Content -->
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:paddingBottom="140dp"
+        android:paddingBottom="150dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/padding_content">
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="8dp">
+
+            <!-- Play All bar -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/glass_border"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALL PLAYLIST"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.card.MaterialCardView>
 
             <!-- Songs RecyclerView -->
             <androidx.recyclerview.widget.RecyclerView
@@ -76,24 +133,23 @@
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="false"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:listitem="@layout/item_song" />
+                tools:listitem="@layout/item_song"/>
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
 
-    <!-- FAB -->
+    <!-- FAB: Add playlist -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="24dp"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/purple_accent"
-        app:tint="@color/text_primary"
+        app:backgroundTint="@color/electric_purple"
+        app:tint="@color/white"
         app:borderWidth="0dp"
-        app:elevation="@dimen/elevation_lg"
-        app:layout_anchor="@id/appBarLayout"
-        app:layout_anchorGravity="bottom|end" />
+        app:elevation="12dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

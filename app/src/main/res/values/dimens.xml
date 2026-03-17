@@ -7,41 +7,41 @@
     <dimen name="spacing_lg">24dp</dimen>
     <dimen name="spacing_xl">32dp</dimen>
     <dimen name="spacing_xxl">48dp</dimen>
-    
+
     <!-- Padding -->
     <dimen name="padding_content">20dp</dimen>
-    <dimen name="padding_card">16dp</dimen>
-    
-    <!-- Corner Radius -->
-    <dimen name="corner_radius_sm">8dp</dimen>
-    <dimen name="corner_radius_md">16dp</dimen>
-    <dimen name="corner_radius_lg">24dp</dimen>
-    <dimen name="corner_radius_xl">32dp</dimen>
-    
-    <!-- Elevation -->
-    <dimen name="elevation_sm">4dp</dimen>
-    <dimen name="elevation_md">8dp</dimen>
-    <dimen name="elevation_lg">16dp</dimen>
-    
-    <!-- Icon Sizes -->
+
+    <!-- Corner Radii -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">16dp</dimen>
+    <dimen name="radius_lg">24dp</dimen>
+    <dimen name="radius_xl">32dp</dimen>
+    <dimen name="radius_circle">999dp</dimen>
+
+    <!-- Component Sizes -->
+    <dimen name="album_art_sm">54dp</dimen>
+    <dimen name="album_art_md">80dp</dimen>
+    <dimen name="album_art_lg">140dp</dimen>
     <dimen name="icon_size_sm">20dp</dimen>
     <dimen name="icon_size_md">24dp</dimen>
     <dimen name="icon_size_lg">32dp</dimen>
-    <dimen name="icon_size_xl">48dp</dimen>
-    
-    <!-- Album Art -->
-    <dimen name="album_art_sm">56dp</dimen>
-    <dimen name="album_art_md">80dp</dimen>
-    <dimen name="album_art_lg">120dp</dimen>
-    <dimen name="album_art_xl">280dp</dimen>
-    
-    <!-- Mini Player -->
-    <dimen name="mini_player_height">72dp</dimen>
-    
-    <!-- Bottom Navigation -->
-    <dimen name="bottom_nav_height">64dp</dimen>
-    
-    <!-- Profile Picture -->
+    <dimen name="icon_size_xl">44dp</dimen>
     <dimen name="profile_picture_size">48dp</dimen>
-    <dimen name="profile_picture_large">120dp</dimen>
+
+    <!-- Player Specific -->
+    <dimen name="disk_size">260dp</dimen>
+    <dimen name="disk_center_size">80dp</dimen>
+    <dimen name="mini_player_height">76dp</dimen>
+    <dimen name="bottom_nav_height">64dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_sm">2dp</dimen>
+    <dimen name="elevation_md">6dp</dimen>
+    <dimen name="elevation_lg">12dp</dimen>
+    <dimen name="elevation_xl">20dp</dimen>
+
+    <!-- Camera Preview -->
+    <dimen name="camera_preview_width">90dp</dimen>
+    <dimen name="camera_preview_height">120dp</dimen>
+    <dimen name="camera_preview_corner">14dp</dimen>
 </resources>

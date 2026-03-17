@@ -5,56 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:paddingBottom="140dp">
+    android:paddingBottom="150dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="@dimen/padding_content">
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="16dp">
 
-        <!-- Header with proper spacing -->
+        <!-- ====== HEADER ROW ====== -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
-            android:layout_marginBottom="@dimen/spacing_lg">
+            android:layout_marginTop="44dp">
 
+            <!-- Left: App Name -->
             <TextView
                 android:id="@+id/tvAppName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:textAppearance="@style/TextAppearance.FlowBeats.Title"
-                android:textSize="24sp"
-                android:fontFamily="sans-serif-black"
+                android:text="FlowBeats"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/ivSettings"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:src="@drawable/ic_settings"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="4dp"
-                android:layout_marginEnd="@dimen/spacing_md"
-                app:layout_constraintEnd_toStartOf="@id/cardProfile"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:tint="@color/text_secondary" />
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
+            <!-- Right: Profile picture (circle, purple border) -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardProfile"
                 android:layout_width="@dimen/profile_picture_size"
                 android:layout_height="@dimen/profile_picture_size"
-                app:cardCornerRadius="24dp"
-                app:cardElevation="@dimen/elevation_md"
-                app:strokeWidth="2dp"
-                app:strokeColor="@color/purple_accent"
+                android:layout_marginEnd="196dp"
                 android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="999dp"
+                app:cardElevation="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/electric_purple"
+                app:strokeWidth="2dp">
 
                 <ImageView
                     android:id="@+id/ivProfilePicture"
@@ -67,141 +60,92 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Greeting -->
+        <!-- ====== GREETING ====== -->
         <TextView
             android:id="@+id/tvGreeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_lg"
-            android:text="@string/good_evening"
-            android:textAppearance="@style/TextAppearance.FlowBeats.Headline" />
+            android:layout_marginTop="24dp"
+            android:text="Good Evening"
+            android:textColor="@color/text_primary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.01"/>
 
         <TextView
             android:id="@+id/tvSubGreeting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ready_to_vibe"
-            android:textAppearance="@style/TextAppearance.FlowBeats.Subtitle"
-            android:layout_marginTop="@dimen/spacing_xs" />
+            android:layout_marginTop="4dp"
+            android:text="Ready to vibe?"
+            android:textColor="@color/text_tertiary"
+            android:textSize="14sp"/>
 
-        <!-- Discover Weekly Card -->
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/cardDiscoverWeekly"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="@dimen/spacing_xl"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="@dimen/elevation_lg"
-            android:foreground="@drawable/ripple_card">
+        <!-- ====== DISCOVER WEEKLY CARD ====== -->
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_button_gradient">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="@dimen/spacing_lg">
-
-                    <ImageView
-                        android:id="@+id/ivMusicIcon"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ic_music_note"
-                        android:alpha="0.9"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/text_primary" />
-
-                    <TextView
-                        android:id="@+id/tvDiscoverTitle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:text="@string/discover_weekly"
-                        android:textSize="24sp"
-                        android:textColor="@color/text_primary"
-                        android:fontFamily="sans-serif-bold"
-                        android:layout_marginTop="@dimen/spacing_md"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/ivMusicIcon" />
-
-                    <TextView
-                        android:id="@+id/tvDiscoverSubtitle"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="Let the vibe Begin"
-                        android:textColor="#E6FFFFFF"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/tvDiscoverTitle" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </FrameLayout>
-
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Your Playlists Header -->
+        <!-- ====== YOUR PLAYLISTS ====== -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_xl">
+            android:layout_marginTop="28dp">
 
             <TextView
                 android:id="@+id/tvYourPlaylists"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/your_playlists"
-                android:textAppearance="@style/TextAppearance.FlowBeats.Title"
+                android:text="All Playlists"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
                 android:id="@+id/tvSeeAll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/see_all"
-                android:textColor="@color/purple_accent"
+                android:text="See All"
+                android:textColor="@color/electric_purple"
+                android:textSize="14sp"
                 android:fontFamily="sans-serif-medium"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="@dimen/spacing_sm"
+                android:padding="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Playlists RecyclerView -->
+        <!-- Playlists horizontal list -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvPlaylists"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
+            android:layout_marginTop="12dp"
             android:clipToPadding="false"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_song" />
+            tools:listitem="@layout/item_playlist_card"/>
 
-        <!-- All Songs Header -->
+        <!-- ====== ALL SONGS ====== -->
         <TextView
             android:id="@+id/tvAllSongs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/all_songs"
-            android:textAppearance="@style/TextAppearance.FlowBeats.Title"
-            android:layout_marginTop="@dimen/spacing_xl" />
+            android:text="All Songs"
+            android:textColor="@color/text_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"/>
 
         <!-- All Songs RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/spacing_md"
+            android:layout_marginTop="12dp"
             android:nestedScrollingEnabled="false"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_song" />
+            tools:listitem="@layout/item_song"/>
 
     </LinearLayout>
 

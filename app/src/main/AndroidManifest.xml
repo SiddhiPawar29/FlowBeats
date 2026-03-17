@@ -60,6 +60,12 @@
             android:name=".activities.PlaylistActivity"
             android:exported="false"
             android:theme="@style/Theme.FlowBeats.NoActionBar" />
+            
+        <!-- Player Activity -->
+        <activity
+            android:name=".activities.PlayerActivity"
+            android:theme="@style/Theme.FlowBeats"
+            android:screenOrientation="portrait"/>
         
         <!-- Music Service -->
         <service

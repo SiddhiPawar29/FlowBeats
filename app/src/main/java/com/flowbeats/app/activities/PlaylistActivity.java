@@ -190,9 +190,14 @@ public class PlaylistActivity extends AppCompatActivity implements GestureListen
                 musicPlayer.volumeUp();
                 message = "Volume Up";
                 break;
-            case THUMBS_UP:
+            case PINKY_UP:
                 musicPlayer.volumeDown();
                 message = "Volume Down";
+                // Assuming gestureHelper is an instance of a class that can show gestures,
+                // and it needs to be initialized elsewhere if not already.
+                // For now, commenting out to avoid compilation error if not defined.
+                // if (gestureHelper != null)
+                // gestureHelper.showGesture("🤙 Volume Down");
                 break;
         }
         if (!message.isEmpty()) {
